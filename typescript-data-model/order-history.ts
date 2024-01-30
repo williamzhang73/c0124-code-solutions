@@ -1,22 +1,22 @@
-interface item {
+interface Item {
   itemName: string;
   author?: string;
   price: number;
   review: string[];
 }
-interface order {
-  'order placed': Date;
+interface Order {
+  orderPlaced: Date;
   total: number;
-  'ship to': string;
-  'order number': string;
-  items: item[];
+  shipTo: string;
+  orderNumber: string;
+  items: Item[];
 }
 
-const order01: order = {
-  'order placed': new Date('2020-08-04'),
+const order01: Order = {
+  orderPlaced: new Date('2020-08-04'),
   total: 34.0,
-  'ship to': 'JS Masher',
-  'order number': '114-999999999',
+  shipTo: 'JS Masher',
+  orderNumber: '114-999999999',
   items: [
     {
       itemName: 'Javascript for impatient programmers',
@@ -26,11 +26,11 @@ const order01: order = {
     },
   ],
 };
-const order02: order = {
-  'order placed': new Date('2020-07-19'),
+const order02: Order = {
+  orderPlaced: new Date('2020-07-19'),
   total: 44.53,
-  'ship to': 'JS Masher',
-  'order number': '113-999999999',
+  shipTo: 'JS Masher',
+  orderNumber: '113-999999999',
   items: [
     {
       itemName: 'The timeless way of building',
@@ -40,11 +40,11 @@ const order02: order = {
     },
   ],
 };
-const order03: order = {
-  'order placed': new Date('2020-07-04'),
+const order03: Order = {
+  orderPlaced: new Date('2020-07-04'),
   total: 17.22,
-  'ship to': 'JS Masher',
-  'order number': '119-999999999',
+  shipTo: 'JS Masher',
+  orderNumber: '119-999999999',
   items: [
     {
       itemName: 'gamecube controller adaptor',
@@ -53,11 +53,11 @@ const order03: order = {
     },
   ],
 };
-const order04: order = {
-  'order placed': new Date('2020-07-04'),
+const order04: Order = {
+  orderPlaced: new Date('2020-07-04'),
   total: 138.93,
-  'ship to': 'JS Masher',
-  'order number': '123-999999999',
+  shipTo: 'JS Masher',
+  orderNumber: '123-999999999',
   items: [
     {
       itemName: 'gamecube controller adaptor',
@@ -71,6 +71,6 @@ const order04: order = {
     },
   ],
 };
-const orderHistory: order[] = [order01, order02, order03, order04];
+const orderHistory: Order[] = [order01, order02, order03, order04];
 
 console.log('the order history is: ', orderHistory);
