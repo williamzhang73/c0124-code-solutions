@@ -10,6 +10,7 @@ student.livesInIrvine = false;
 student.perviousOccupation = 'driver';
 console.log(`the value of livesInIrvine: ${student.livesInIrvine}`);
 console.log(`the value of previousOccupation: ${student.perviousOccupation}`);
+console.log(`the value of student: `, student);
 const vehicle = {
   make: 'tesla',
   model: 'model Y',
