@@ -41,8 +41,8 @@ const getLastElement: (array: any[]) => any = (array) => {
   return array.at(-1);
 };
 
-const array1: any[] = ['propane', 'and', 'propane', 'accessories'];
-const array2: any[] = [true, true, false, true];
+const array1: string[] = ['propane', 'and', 'propane', 'accessories'];
+const array2: boolean[] = [true, true, false, true];
 console.log('the last element of array1: ', getLastElement(array1));
 console.log('the last element of array1: ', getLastElement(array2));
 
