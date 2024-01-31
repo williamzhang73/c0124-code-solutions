@@ -34,3 +34,14 @@ const array1 = ['propane', 'and', 'propane', 'accessories'];
 const array2 = [true, true, false, true];
 console.log('the last element of array1: ', getLastElement(array1));
 console.log('the last element of array1: ', getLastElement(array2));
+const callOtherFunction = (otherFunction, params) => {
+  return otherFunction(params);
+};
+console.log(
+  'the return value of function convertMinutesToSeconds: ',
+  callOtherFunction(convertMinutesToSeconds, 10)
+);
+console.log(
+  'the return value of function getLastElement: ',
+  callOtherFunction(getLastElement, ['hello', 'goodbye', 'Aloha'])
+);

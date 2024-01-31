@@ -45,3 +45,20 @@ const array1: any[] = ['propane', 'and', 'propane', 'accessories'];
 const array2: any[] = [true, true, false, true];
 console.log('the last element of array1: ', getLastElement(array1));
 console.log('the last element of array1: ', getLastElement(array2));
+
+const callOtherFunction: (otherFunction: any, params: unknown) => any = (
+  otherFunction,
+  params
+) => {
+  return otherFunction(params);
+};
+
+console.log(
+  'the return value of function convertMinutesToSeconds: ',
+  callOtherFunction(convertMinutesToSeconds, 10)
+);
+
+console.log(
+  'the return value of function getLastElement: ',
+  callOtherFunction(getLastElement, ['hello', 'goodbye', 'Aloha'])
+);
