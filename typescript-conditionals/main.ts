@@ -70,9 +70,12 @@ const homer: Person = {
 };
 console.log('value of isOldEnoughToDrive: ', isOldEnoughToDrive(homer));
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function isOldEnoughToDrinkAndDrive(person: Person): boolean {
-  return false;
+  if (person.age >= 16 && person.age >= 21) {
+    return false;
+  } else {
+    return false;
+  }
 }
 
 const henry: Person = {
