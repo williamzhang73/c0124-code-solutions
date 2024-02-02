@@ -5,5 +5,6 @@ function findIndex(array: any, value: unknown): number {
       return index;
     }
   }
+
   return -1;
 }
