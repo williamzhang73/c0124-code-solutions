@@ -4,7 +4,7 @@ function pick(
   keys: string[]
 ): Record<string, number> {
   /*   const source1 = { ...source }; */
-  const picked: Record<string, any> = {};
+  const picked: Record<string, number> = {};
   for (const key of keys) {
     /*  console.log('key', key); */
     if (key in source) {
