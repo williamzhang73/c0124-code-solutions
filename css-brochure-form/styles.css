@@ -1,0 +1,38 @@
+div {
+  padding-right: 30%;
+  padding-left: 30%;
+  font-family: 'Brandon Grotesque', serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+form section.tableTitle {
+  text-align: center;
+  color: crimson;
+}
+
+form > section {
+  padding: 10px;
+}
+
+form select {
+  width: 100%;
+  background-color: lightgray;
+  border-radius: 6px;
+}
+
+form input {
+  width: 100%;
+  border-radius: 6px;
+  border-color: lightgray;
+}
+
+form section.submitButton {
+  text-align: right;
+}
+
+form input.submit {
+  width: auto;
+  border-radius: 15px;
+  background-color: crimson;
+}
