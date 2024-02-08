@@ -13,8 +13,20 @@
   flex-wrap: nowrap;
 }
 
-.row .column-two-third {
-  display: flex;
+.row > .column-one-second {
+  width: calc(100%2);
+}
+
+.row > .column-one-third {
+  width: calc(100% / 3);
+}
+
+.row > .column-two-third {
+  width: calc(100% / 3 * 2);
+}
+
+.row > .column-one-fourth {
+  width: 100%;
 }
 
 img {
