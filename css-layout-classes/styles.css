@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.row > .column-one-second {
+  width: calc(100%2);
+}
+
+.row > .column-one-third {
+  width: calc(100% / 3);
+}
+
+.row > .column-two-third {
+  width: calc(100% / 3 * 2);
+}
+
+.row > .column-one-fourth {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
