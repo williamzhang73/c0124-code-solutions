@@ -5,10 +5,10 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - What are the four components of "the Cascade".
-  user-agent stylesheet, author stylesheet, user stylesheet, cascade layers
+  !important, specificity, inheritance, source code.
 
 - What does the term "source order" mean with respect to CSS?
-  rule sets from user agent
+  the order of css written
 
 - How is it possible for the styles of an element to be applied to its children as well without an additional CSS rule?
   property-name: inherited
