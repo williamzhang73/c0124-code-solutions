@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.container {
+  min-height: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-full {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1ch;
+}
+
+.rightType {
+  color: green;
+}
+
+.wrongType {
+  color: red;
+}
+
+.underscore {
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
