@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 94vh;
+}
+
+.col-full {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cycle {
+  width: 15rem;
+  height: 15rem;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.bodyNight {
+  background-color: black;
+}
+
+.cycleNight {
+  background-color: grey;
+}
