@@ -15,10 +15,11 @@ Answer the following questions in the provided markdown file before turning in t
   argument is css selector.
 
 - How can you retrieve the value of an element's attribute?
-  element.getAttribute()
+  element.getAttribute() or
+  element.dataset
 
 - At what steps of the solution would it be helpful to log things to the console?
-  when you want to check the value or what property or methods an object have.
+  when you want to check the value of a variable or what property or methods an object have.
 
 - If you were to add another tab and view to your HTML, but you didn't use event delegation, how would your JavaScript code be written instead?
 

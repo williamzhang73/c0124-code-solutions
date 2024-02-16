@@ -19,7 +19,9 @@ $TabContainer.addEventListener('click', (event: Event) => {
   }
 
   const currentDataView = $eventTarget.getAttribute('data-view');
-  console.log('dataView: ', currentDataView);
+  console.log('dataset.view: ', $eventTarget.dataset.view);
+
+  /*   console.log('dataView: ', currentDataView); */
   for (const $view of $viewElements) {
     if ($view.getAttribute('data-view') === currentDataView) {
       $view.classList.toggle('hidden');
