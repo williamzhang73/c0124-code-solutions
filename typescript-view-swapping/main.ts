@@ -1,15 +1,15 @@
-const $TabContainer = document.querySelector('.tab-container');
-const $TabElements = document.querySelectorAll('.tab');
+const $tabContainer = document.querySelector('.tab-container');
+const $tabElements = document.querySelectorAll('.tab');
 const $viewElements = document.querySelectorAll('.view');
 
-if (!$TabContainer || !$TabElements || !$viewElements) {
+if (!$tabContainer || !$tabElements || !$viewElements) {
   throw new Error('query failed');
 }
 /* console.log('$TabElements: ', $TabElements); */
-$TabContainer.addEventListener('click', (event: Event) => {
+$tabContainer.addEventListener('click', (event: Event) => {
   /*   console.log('event target: ', event.target); */
   const $eventTarget = event.target as HTMLDivElement;
-  for (const $tabElement of $TabElements) {
+  for (const $tabElement of $tabElements) {
     /*     console.log('$tabElement: ', $tabElement); */
     if ($tabElement === $eventTarget) {
       $tabElement.classList.toggle('active');
