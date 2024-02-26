@@ -1,5 +1,5 @@
 interface RangeReport {
-  total1: number;
+  total: number;
   odds: number[];
   evens: number[];
   range: number[];
@@ -7,29 +7,43 @@ interface RangeReport {
 }
 
 function getRangeReport(start: number, end: number): RangeReport {
-  const total1 = ((start + end) * (end - start + 1)) / 2;
-  const average = total1 / (end - start + 1);
+  let total = 0;
   const odds = [];
   const evens = [];
   const range = [];
-  for (let i = start; i < end + 1; i++) {
-    range.push(i);
-    if (i % 2 === 1) {
-      odds.push(i);
-    } else {
-      evens.push(i);
+  let average = 0;
+  if (start < end) {
+    total = ((start + end) * (end - start + 1)) / 2;
+    average = total / (end - start + 1);
+
+    for (let i = start; i < end + 1; i++) {
+      range.push(i);
+      if (i % 2 === 1) {
+        odds.push(i);
+      } else {
+        evens.push(i);
+      }
     }
+  } else if (start === end) {
+    total = start;
+    if (start % 2 === 1) {
+      odds.push(start);
+    } else {
+      evens.push(start);
+    }
+    range.push(start);
+    average = start;
   }
+
   const rangeReport = {
-    total1,
+    total,
     odds,
     evens,
     range,
     average,
   };
-
   return rangeReport;
 }
 
-console.log(getRangeReport(1, 10));
+console.log(getRangeReport(5, 5));
 console.log(getRangeReport(1, 5));
