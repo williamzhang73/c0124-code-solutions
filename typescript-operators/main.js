@@ -18,7 +18,7 @@ console.log('configs ', config1, ' ', config2);
 const cfg1 = v1 ?? 'default-value';
 const cfg2 = v2 ?? 'default-value';
 const cfg3 = v3 ?? 'default-value';
-console.log('cfgs ', cfg1, ' ', cfg2, ' ', cfg3);
+console.log('cfgs ', cfg1, ' ', `'${cfg2}'`, ' ', cfg3);
 const tern1 = v1 ? 'truthy' : 'falsy';
 const tern2 = v2 ? 'truthy' : 'falsy';
 console.log('terns: ', tern1, ' ', tern2);
