@@ -13,10 +13,10 @@ for (let i = 0; i < $iElements.length; i++) {
   $iElements[i].dataset.index = i.toString();
 }
 setInterval(() => {
-  if (imagesIndex >= 4) {
-    imagesIndex = 3;
-  }
   imagesIndex++;
+  if (imagesIndex >= 4) {
+    imagesIndex = 0;
+  }
   const $image = document.querySelector('img');
   if (!$image) {
     throw new Error('!image query failed');
@@ -46,7 +46,6 @@ $circles.addEventListener('click', (event) => {
     throw new Error('!image query failed');
   }
   $image.src = imagesUrl[imagesIndex];
-  $image.dataset.imageIndex = imagesIndex.toString();
   for (let i = 0; i < $iElements.length; i++) {
     if (imagesIndex === i) {
       $iElements[i].className = 'fa-solid fa-circle';
