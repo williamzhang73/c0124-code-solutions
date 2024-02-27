@@ -5,12 +5,17 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - What is destructuring, conceptually?
+  extracting data from array and object, and assign them to variables.
 
 - What is the syntax for `Object` destructuring?
+  let/const {property: variable=default value}=object
 
 - What is the syntax for `Array` destructuring?
+  let/ const [, , , variable]=array
 
 - How can you tell the difference between destructuring and creating `Object`/`Array` literals?
+  creating: object and array literal sit on the right side of assignment
+  destructing:
 
 ## Notes
 
