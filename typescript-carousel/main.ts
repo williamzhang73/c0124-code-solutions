@@ -113,12 +113,23 @@ $arrowLeft.addEventListener('click', () => {
       if (i === 0) {
         imagesIndex = 4;
         $image.src = imagesUrl[4];
-        /*      for (let j = 0; j < $iElements.length; j++) {
-          
-        } */
+        for (let j = 0; j < $iElements.length; j++) {
+          if (j === 4) {
+            $iElements[j].className = 'fa-solid fa-circle';
+          } else {
+            $iElements[j].className = 'fa-regular fa-circle';
+          }
+        }
       } else {
         imagesIndex = i - 1;
-        $image.src = imagesUrl[i - 1];
+        $image.src = imagesUrl[imagesIndex];
+        for (let j = 0; j < $iElements.length; j++) {
+          if (j === i - 1) {
+            $iElements[j].className = 'fa-solid fa-circle';
+          } else {
+            $iElements[j].className = 'fa-regular fa-circle';
+          }
+        }
       }
       break;
     }
