@@ -18,8 +18,6 @@ body {
 .column-one-third {
   width: calc(100% / 3);
   text-align: center;
-
-  /*  padding: 20px 0 ; */
 }
 
 .column-one-third-arrow {

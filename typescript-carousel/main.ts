@@ -11,28 +11,23 @@ const $iElements = document.querySelectorAll(
   '.circle'
 ) as NodeListOf<HTMLElement>;
 $iElements[0].className = 'fa-solid fa-circle';
-for (let i = 0; i < $iElements.length; i++) {
-  $iElements[i].dataset.index = i.toString();
-}
 
 setInterval(() => {
   imagesIndex++;
-  if (imagesIndex >= 4) {
+  if (imagesIndex > 4) {
     imagesIndex = 0;
   }
-
   const $image = document.querySelector('img') as HTMLImageElement;
   if (!$image) {
     throw new Error('!image query failed');
   }
   $image.src = imagesUrl[imagesIndex];
-  $image.dataset.imageIndex = imagesIndex.toString();
-  $iElements[imagesIndex].className = 'fa-solid fa-circle';
-  if (imagesIndex !== 0) {
-    $iElements[imagesIndex - 1].className = 'fa-regular fa-circle';
-  }
-  if (imagesIndex === 0) {
-    $iElements[4].className = 'fa-regular fa-circle';
+  for (let i = 0; i < $iElements.length; i++) {
+    if (i === imagesIndex) {
+      $iElements[i].className = 'fa-solid fa-circle';
+    } else {
+      $iElements[i].className = 'fa-regular fa-circle';
+    }
   }
   if (imagesIndex === 4) {
     imagesIndex = -1;
@@ -45,17 +40,24 @@ if (!$circles) {
 }
 $circles.addEventListener('click', (event: Event) => {
   const eventTarget = event.target as HTMLElement;
-  imagesIndex = Number(eventTarget.dataset.index);
-  const $image = document.querySelector('img') as HTMLImageElement;
-  if (!$image) {
-    throw new Error('!image query failed');
-  }
-  $image.src = imagesUrl[imagesIndex];
-  for (let i = 0; i < $iElements.length; i++) {
-    if (imagesIndex === i) {
-      $iElements[i].className = 'fa-solid fa-circle';
+  if (eventTarget.matches('i')) {
+    imagesIndex = Number(eventTarget.dataset.index);
+    const $image = document.querySelector('img') as HTMLImageElement;
+    if (!$image) {
+      throw new Error('!image query failed');
+    }
+    if (imagesIndex === -1) {
+      $image.src = imagesUrl[0];
     } else {
-      $iElements[i].className = 'fa-regular fa-circle';
+      $image.src = imagesUrl[imagesIndex];
+    }
+
+    for (let i = 0; i < $iElements.length; i++) {
+      if (imagesIndex === i) {
+        $iElements[i].className = 'fa-solid fa-circle';
+      } else {
+        $iElements[i].className = 'fa-regular fa-circle';
+      }
     }
   }
 });
@@ -107,7 +109,6 @@ $arrowLeft.addEventListener('click', () => {
     throw new Error('$image query failed');
   }
   const url = $image.getAttribute('src');
-  /*   console.log('url: ', url); */
   for (let i = 0; i < imagesUrl.length; i++) {
     if (url === imagesUrl[i]) {
       if (i === 0) {
