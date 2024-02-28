@@ -7,5 +7,5 @@ console.log('Reverse order:');
 
 values.forEach((element) => {
   const index = values.indexOf(element);
-  console.log(values[9 - index]);
+  console.log(values[values.length - index - 1]);
 });

@@ -5,6 +5,6 @@ const mapppedArr = prices.map((element) => {
 console.log('Price objects: ', mapppedArr);
 
 const formatted = prices.map((element) => {
-  return element.toFixed(2);
+  return '$' + element.toFixed(2);
 });
 console.log('Formatted Price: ', formatted);
