@@ -1,0 +1,500 @@
+   71  git checkout -b html-tables
+   72  git add . 
+   73  git commit -m "html-tables created"
+   74  git push origin html-tables
+   75  git push origin html-tables
+   76  git checkout main 
+   77  git pull origin main 
+   78  git checkout html-tables
+   79  git add  .
+   80  git commit -m "html-forms deleted"
+   81  git push origin html-tables
+   82  git checkout main 
+   83  git pull origin main
+   84  git checkout -b if-html-exists
+   85  git checkout main 
+   86  git status 
+   87  git pull main 
+   88  git pull origin main 
+   89  git checkout -b html-web-page
+   90  git add . 
+   91  git commit -m "html-web-page created"
+   92  git push origin html-web-page
+   93  git checkout main 
+   94  git status 
+   95  git pull origin main 
+   96  git checkout -b test\
+   97  git checkout main 
+   98  git status 
+   99  git status 
+  100  git chekout -b css-syntax
+  101  git checkout -b css-syntax
+  102  git add . 
+  103  git commit -m "css-syntax created"
+  104  git push origin css-syntax
+  105  git checkout main 
+  106  git stattus 
+  107  git status 
+  108  git pull origin main 
+  109  git status 
+  110  git status
+  111  git checkout -b css-fonts-and-colors
+  112  git add . 
+  113  git commit -m "css-fonts-and-colors created"
+  114  git push origin css-fonts-and-colors
+  115  git add  .
+  116  git commit -m "updated"
+  117  git push origin css-fonts-and-colors
+  118  git status 
+  119  git checkout main
+  120  git pull origin main 
+  121  git status 
+  122  git checkout -b 
+  123  git checkout -b css-box-model
+  124  git add . 
+  125  git commit -m "css-box-model created"
+  126  git push origin css-box-model
+  127  git checkout main 
+  128  git status 
+  129  git pull origin main 
+  130  git checkout -b css-pseudo-classes
+  131  git add .
+  132  git commit -m "css-pseudo-classes created"
+  133  git push origin css-pseudo-classes
+  134  git ad . 
+  135  git add . 
+  136  git commit -m "updated"
+  137  git push origin css-flexbox
+  138  git checkout main 
+  139  git pull origin main
+  140  git checkout -b css-layout-classes
+  141  git add . 
+  142  git commit -m "css-layout-classes created"
+  143  git push origin css-layout-classes
+  144  git add . 
+  145  git commit -m "updated"
+  146  git push origin css-layout-classes
+  147  git status 
+  148  git add .
+  149  git commit -m "updated"
+  150  git push origin css-layout-classes
+  151  git checkout main
+  152  git pull origin main
+  153  git checkout -b css-three-column-layout
+  154  git add . 
+  155  git commit -m "css-three-column-layout created"
+  156  git push origin css-three-column-layout
+  157  git status
+  158  git checkout -b css-positioning
+  159  git add . 
+  160  git commit -m "css-positioning created"
+  161  git push origin css-positioning
+  162  git add . 
+  163  git commit -m "css-canvas-medical created"
+  164  git add .
+  165  git commit -m "css-canvas-medical created"
+  166  git push origin css-canvas-medical
+  167  git checkout main 
+  168  git pull origin main
+  169  git checkout object-manipulation-2
+  170  git status 
+  171  cd object-manipulation-2
+  172  cd src
+  173  npx tsc --watch
+  174  cd ..
+  175  cd ..
+  176  git add . 
+  177  git commit -m "object-manipulation-2 created"
+  178  git push origin object-manipulation-2
+  179  git checkout main 
+  180  git status 
+  181  git checkout -b practice-exercies
+  182  git branch -v 
+  183  git branch -d  typescript-template-literals 
+  184  git branch -d    typescript-primitives-and-variables
+  185  git branch -d     typescript-operators-and-expressions
+  186  git branch -d      typescript-objects
+  187  git branch -d    typescript-methods 
+  188  git branch -d    typescript-loops-practice   typescript-functions  typescript-data-model  typescript-conditionals   typescript-arrays  
+  189  git branch -v
+  190  git branch -d   typescript-loops   typescript-intro  typescript-functions-practice  if-html-exists     html-web-page   html-tables  html-relative-links html-lists     html-intro     html-links  html-forms   html-block-and-inline 
+  191  git branch -v
+  192  git branch -d     css-three-column-layout css-syntax  css-pseudo-classes   css-box-model    css-box-model   css-brochure-form   css-flexbox   css-fonts-and-colors   css-layout-classes    css-positioning  
+  193  git branch -d     css-three-column-layout css-syntax   css-box-model    css-box-model   css-brochure-form   css-flexbox   css-fonts-and-colors   css-layout-classes    css-positioning  
+  194  git branch -d     css-three-column-layout css-syntax   css-box-model     css-brochure-form   css-flexbox   css-fonts-and-colors   css-layout-classes    css-positioning  
+  195  git branch v-
+  196  git branch -v
+  197  git checkout main 
+  198  git checkout -b dom-querying
+  199  git checkout main
+  200  git checkout  dom-querying
+  201  git add . 
+  202  git commit -m "dom-querying added"
+  203  git checkout practice-exercise
+  204  git branch -v 
+  205  git checkout practice-exercies  
+  206  git status 
+  207  git add d. 
+  208  git add .
+  209  git commit -m "practice-exercies   added"
+  210  git checkout dom-querying
+  211  git status 
+  212  cd dom-querying
+  213  npx tsc --watch
+  214  cd ..
+  215  cd ..
+  216  cd c0124-code-solutions
+  217  cd dom-querying
+  218  git add .
+  219  git commit -m "dom-querying created"
+  220  git add .
+  221  git add .
+  222  clear
+  223  git status 
+  224  cd ..
+  225  git add .
+  226  git commit -m "dom-query created"
+  227  git push origin dom-querying
+  228  git status 
+  229  git checkout main 
+  230  git checkout -b dom-events
+  231  cd dom-events
+  232  npx tsc --watch
+  233  cd ..
+  234  git add .
+  235  git commit -m "dom-events created"
+  236  cd dom-events
+  237  npx tsc --watch
+  238  cd ..
+  239  git add .
+  240  git commit -m "dom-events created"
+  241  git push origin dom-events
+  242  cd dom-events
+  243  npx tsc --watch
+  244  git status
+  245  git add . 
+  246  git status 
+  247  git checkout main 
+  248  git checkout -b dom-manipulation
+  249  cd ..
+  250  git checkout -b dom-manipulation
+  251  cd dom-manipulation
+  252  npx tsc --watch
+  253  cd ..
+  254  git add . 
+  255  git commit -m "dom-manipulation created"
+  256  git add .
+  257  git commit -m "dom-manipulation created"
+  258  git push origin dom-manipulation
+  259  cd dom-manipulation
+  260  npx tsc --watch
+  261  cd ..
+  262  git status 
+  263  git add .
+  264  git commit -m "updated"
+  265  git checkout main 
+  266  git pull origin main
+  267  git status 
+  268  git checkout main 
+  269  git pull origin main
+  270  git checkout -b dom-creation
+  271  git status 
+  272  cd dom-creation
+  273  npx tsc --watch
+  274  cd ..
+  275  git add . 
+  276  git commit -m "dom-creation created"
+  277  git push origin dom-creation
+  278  cd dom-creation 
+  279  npx tsc --watch 
+  280  git add . 
+  281  git commit -m "dom-creation updated"
+  282  git push origin dom-creation
+  283  cd .
+  284  cd ..
+  285  git status 
+  286  git branch -v 
+  287  git checkout main 
+  288  git pull origin main
+  289  git checkout test 
+  290  git status 
+  291  git add . 
+  292  git commit -m "test updated"
+  293  git checkout main 
+  294  git checkout -b dom-event-delegation
+  295  cd dom-event-delegation 
+  296  npx tsc --watch
+  297  cd ..4
+  298  cd ..
+  299  git add . 
+  300  git commit -m "dom-event-delegation crated"
+  301  git push origin dom-event-delegation
+  302  git status 
+  303  git add . 
+  304  git commit -m "dom-event-delegation updated"
+  305  git checkout main 
+  306  git pull origin main 
+  307  git checkout -b typescript-modal
+  308  cd typescript-modal
+  309  npx tsc --watch
+  310  cd ..
+  311  git add . 
+  312  git commit -m "typecript-modal created"
+  313  git push origin typescript-modal
+  314  git checkout main 
+  315  git pull origin main 
+  316  git checkout -b css-media-queries
+  317  git add . 
+  318  git commmit -m "css-media-queries created"
+  319  git commit -m "css-media-queries created"
+  320  git push origin css-media-queries
+  321  git add . 
+  322  git commit -m "updated"
+  323  git push origin css-media-queries
+  324  git checkout main 
+  325  git pull origin main
+  326  git checkout -b css-transitions-and-transforms
+  327  git add . 
+  328  git commit -m "css-transition-and-transforms created"
+  329  git push origin css-transitions-and-transforms
+  330  git checkout main 
+  331  git status 
+  332  git checkout -b css-responsive-layout
+  333  git add . 
+  334  git commit -m "css-responsive-layout created"
+  335  git push origin css-responsive-layout
+  336  git status 
+  337  git add .
+  338  git commit -m "updated"
+  339  git checkout main 
+  340  git status 
+  341  git commit -m "updated"
+  342  cd typescript-local-storage
+  343  git add .
+  344  git commit -m "updated"
+  345  git commit -m "typescript-local-storage updated"
+  346  git add .
+  347   git commit -m "updated"
+  348  git checkout main 
+  349  cd ..
+  350  git clone https://github.com/williamzhang73/code-journal.git
+  351  ls 
+  352  npm install 
+  353  git checkout -b user-can-create-an-entry
+  354  clear 
+  355  npx tsc --watch
+  356  git add . 
+  357  git commit m- "submit and beforeunload event listener added"
+  358  git commit -m  "submit and beforeunload event listener added"
+  359  git commit -m  "submit and beforeunload event listener added"
+  360  git add . 
+  361  git commit -m  "submit and beforeunload event listener added"
+  362  git add .
+  363  git commit -m  "submit and beforeunload event listener added"
+  364  npx tsc --watch
+  365  git add .
+  366   git commit -m "user can create an entry created"
+  367  git push origin user-can-create-an-entry
+  368  git add . 
+  369  git commit  "user can create an entry. #1"
+  370  git commit --amend -m  "user can create an entry. #1"
+  371  git push origin user-can-create-an-entry
+  372  git status 
+  373  git add .
+  374  git commit -m "styles revised"
+  375  git add .
+  376  git commit -m "styles revised"
+  377  git push origin user-can-create-an-entry
+  378  git pull origin user-can-create-an-entry
+  379  git status 
+  380  git push origin user-can-create-an-entry
+  381  git push origin user-can-create-an-entry
+  382  git pull origin user-can-create-an-entry
+  383  git push origin user-can-create-an-entry
+  384  git pull origin user-can-create-an-entry
+  385  git push help
+  386  git push --help
+  387  git push origin user-can-create-an-entry --force
+  388  npx tsc --watch
+  389  git add .
+  390  git commit -m "styles and extra console log fixed "
+  391  git push origin user-can-create-an-entry
+  392  npx tsc --watch
+  393  git add . 
+  394  git commit -m "console log deleted"
+  395  git push origin user-can-create-an-entry
+  396  git add . 
+  397  git commit -m "deleted extra"
+  398  git push origin user-can-create-an-entry
+  399  git checkout main 
+  400  git pull origin user-can-create-an-entry
+  401  git pull origin main
+  402  git checkout -b user-can-view-their-entries
+  403  npx tsc --watch
+  404  npx tsc --watch
+  405  git add .
+  406  git commit -m "DOMContentLoaded event added"
+  407  npx tsc --watch
+  408  git add . 
+  409  git commit -m "viewSwap added"
+  410  git commit -m "viewSwap added"
+  411  git commit -m "viewSwap added" --force
+  412  npx tsc --watch
+  413  git add . 
+  414  git commit -m "submit callback function updated"
+  415  npx tsc --watch
+  416  git add . 
+  417  git commit -m "toggleNoEntries function updated"
+  418  npx tsc --watch
+  419  git add .
+  420  git commit -m "user-can-view-their-entries created. #2"
+  421  git push origin user-can-view-their-entries
+  422  npx tsc --watch
+  423  git add . 
+  424  git commit -m "styling problems fixed"
+  425  git push origin user-can-view-their-entries
+  426  git checkout main 
+  427  git pull origin main
+  428  git checkout -b user-can-edit-an-entry
+  429  npx tsc --watch
+  430  git checkout main 
+  431  cd ..
+  432  cd week-planner
+  433  npm install
+  434  cd ..
+  435  git clone https://github.com/nmotamedi/week-planner
+  436  cd ..
+  437  git clone https://github.com/nmotamedi/week-planner.git
+  438  ls
+  439  rm -rf week-planner/
+  440  ls
+  441  git clone https://github.com/nmotamedi/week-planner.git
+  442  npx tsc --watch
+  443  git add . 
+  444  git commit -m "push to not main branch"
+  445  git push origin css-pseudo-classes
+  446  git push origin css-pseudo-classes
+  447  git push origin css-layout-classes
+  448  git checkout css-layout-classes
+  449  git checkout -b practice-interview-challenge
+  450  cd practice-interview-challenge
+  451  npx tsc --watch
+  452  npx tsc -watch
+  453  cd ..
+  454  git add . 
+  455  git commit -m "practice-interview-challenge created"
+  456  git push origin practice-interview-challenge
+  457  cd practice-interview-challenge
+  458  npx tsc --watch
+  459  cd ..
+  460  git add . 
+  461  git commit -m "start===equal senario added"
+  462  git push origin practice-interview-challenge
+  463  git pull origin main 
+  464  git checkout main 
+  465  git status 
+  466  git pull origin main
+  467  git staus 
+  468  git status 
+  469  git status 
+  470  git checkout -b typescript-timers
+  471  cd typescript-timers
+  472  npx tsc --watch
+  473  cd 
+  474  cd ..
+  475  git add .
+  476  cd workspaces
+  477  cd ..
+  478  cd workspaces
+  479  cd c0124-code-solutions
+  480  git add . 
+  481  git commit -m "typescript-timers created"
+  482  git push origin typescript-timers
+  483  git status 
+  484  git push origin typescript-timers
+  485  git add . 
+  486  npx tsc --watch
+  487  cd typescript-timers
+  488  npx tsc -watch
+  489  cd ..
+  490  git add .
+  491  git commit -m "move line 6 out of interval function "
+  492  git status 
+  493  git checkout mian 
+  494  git checkout main 
+  495  git status 
+  496  git pull origin main
+  497  git branch -v 
+  498  git branch -d   dom-event-delegation   dom-events  dom-manipulation  dom-querying   object-manipulation-1  object-manipulation-2   practice-exercies   practice-interview-challenge string-manipulation-1 
+  499  git branch -v 
+  500  git branch -d  typescript-view-swapping  typescript-typing-tutor   typescript-timers    typescript-modal   typescript-local-storage  typescript-light-bulb   typescript-forms   typescript-and-json  
+  501  git status 
+  502  git checkout main 
+  503  git pull origin main 
+  504  git checkout -b command-line-basics
+  505  cd command-line-basics
+  506  man man
+  507  man cat
+  508  man cat
+  509  pwd
+  510  ls workspace
+  511  ls workspaces
+  512  ls /
+  513  ls /workspaces
+  514  echo "hello word"
+  515  console.log("a")
+  516  cat laziness.txt
+  517  cat impatience.txt
+  518  cat hubris.txt
+  519  cat laziness.txt impatience.txt hubris.txt
+  520  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  521  cat three-virtues.txt
+  522  man ls 
+  523  ls 
+  524  ls -a 
+  525  ls -F
+  526  ls lfz/staff
+  527  ls lfz-staff
+  528  ls lfz-staff -a 
+  529  ls lfz-staff -F
+  530  ls -aF lfz-staff > lfz-staff/contents.txt
+  531  cat lfz/staff/content.xt
+  532  cat lfz/staff/content.txt
+  533  cat lfz-staff/content.txt
+  534  cat lfz-staff/contents.txt
+  535  man pwd
+  536  pwd
+  537  pwd > i-was-here.txt
+  538  ls
+  539  cat i-was-here.txt
+  540  man echo
+  541  echo "hello world!" 
+  542  echo "Hello, World!" > hello.txt
+  543  ls 
+  544  cat hello.txt
+  545  man touch
+  546  touch tag-youre-it.txt
+  547  touch snoot/boop.txt
+  548  ls snoot
+  549  man mkdir
+  550  mkdir parent
+  551  ls -F
+  552  mkdir -p parent/child/grandchild
+  553  touch parent/child/grandchild/.gitkeep
+  554  ls -a  parent/child/grandchild
+  555  man mv
+  556  mv pokiemans pokemon
+  557  lls 
+  558  ls 
+  559  man rm
+  560  rm lol.txt
+  561  ls 
+  562  rm -r kill-me
+  563  ls kill-me
+  564  man cp
+  565  cp and-then.txt no-and-then.txt
+  566  ls 
+  567  cat and-then.txt no-and-then.txt
+  568  man history
+  569  history
+  570  history > command-history.txt
