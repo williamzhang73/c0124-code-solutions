@@ -1,0 +1,20 @@
+{
+  "name": "npm-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".npm-init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello": "echo Hello, LearningFuze"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0"
+  }
+}
