@@ -15,9 +15,14 @@ async function fetchPokemon(): Promise<void> {
   const data = await response.json();
   console.log('Pokemon: ', data);
 }
-try {
-  fetchUsers();
-  fetchPokemon();
-} catch (error) {
-  throw new Error('fetch data error.');
+
+async function fetchAll(): Promise<void> {
+  try {
+    await fetchUsers();
+    await fetchPokemon();
+  } catch (error) {
+    throw new Error('fetch data error.');
+  }
 }
+
+fetchAll();

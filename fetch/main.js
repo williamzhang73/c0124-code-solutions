@@ -15,9 +15,12 @@ async function fetchPokemon() {
   const data = await response.json();
   console.log('Pokemon: ', data);
 }
-try {
-  fetchUsers();
-  fetchPokemon();
-} catch (error) {
-  throw new Error('fetch data error.');
+async function func() {
+  try {
+    await fetchUsers();
+    await fetchPokemon();
+  } catch (error) {
+    throw new Error('fetch data error.');
+  }
 }
+func();
