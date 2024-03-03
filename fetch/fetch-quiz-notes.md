@@ -15,8 +15,7 @@ Answer the following questions in the provided markdown file before turning in t
   specify method: 'get|post' in Request object
 
 - How does `fetch` report errors?
-  try/catch
-  return a promise with rejected
+  fetch can only return an error when there is a network error
 
 ## Notes
 

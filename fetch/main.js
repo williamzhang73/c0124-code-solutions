@@ -1,30 +1,23 @@
 'use strict';
-const request = new Request('https://jsonplaceholder.typicode.com/users');
-fetch(request)
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      throw new Error(`code status: ${response.status}`);
-    }
-  })
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    throw new Error(error);
-  });
-fetch('https://pokeapi.co/api/v2/pokemon/1')
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      throw new Error(`code status: ${response.status}`);
-    }
-  })
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((error) => {
-    throw new Error(error);
-  });
+async function fetchUsers() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+  if (!response.ok) {
+    throw new Error(`HTTP error: ${response.status}`);
+  }
+  const data = await response.json();
+  console.log('Users: ', data);
+}
+async function fetchPokemon() {
+  const response = await fetch('https://pokeapi.co/api/v2/pokemon/1');
+  if (!response.ok) {
+    throw new Error(`HTTP error: ${response.status}`);
+  }
+  const data = await response.json();
+  console.log('Pokemon: ', data);
+}
+try {
+  fetchUsers();
+  fetchPokemon();
+} catch (error) {
+  throw new Error('fetch data error.');
+}
