@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.container {
+  min-width: 900px;
+  min-height: 900px;
+}
+
+.row {
+  display: flex;
+}
+
+.column-one-third {
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.column-one-third-arrow {
+  position: relative;
+  top: 20vh;
+}
+
+img {
+  width: 100%;
+}
