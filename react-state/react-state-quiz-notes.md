@@ -9,13 +9,14 @@ Answer the following questions in the provided markdown file before turning in t
 
 - What are the "Rules of Hooks"? (if necessary, re-read the "Pitfall" box in [State](https://react.dev/learn/state-a-components-memory))
   only call hook at top level
-  only call hooks from react functions
+  only call hooks from react component or another hooks
+  start with use
 
 - What is the purpose of state in React?
   To maintain and track the information of the component's situation and data,that may changed by user action
 
 1. persist data
-2. re-render
+2. schedule re-render in task queue
 
 - Why can't we just maintain state in a local variable?
   local variables do not trigger re-render actions.
