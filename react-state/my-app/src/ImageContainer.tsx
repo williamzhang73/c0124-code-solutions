@@ -6,16 +6,21 @@ type Props = {
 
 export function ImageContainer({ imageSrc }: Props) {
   const [index, setIndex] = useState(0);
-  if (index > imageSrc.length - 1) {
-    setIndex(0);
+  function handleImageClick() {
+    if (index >= imageSrc.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
+    }
   }
+
   return (
     <div className="d-flex justify-content-center">
       <div className="width-50 ">
         <img
           className="image-fill"
           src={imageSrc[index]}
-          onClick={() => setIndex(index + 1)}
+          onClick={handleImageClick}
           alt="space-image"
         />
       </div>
