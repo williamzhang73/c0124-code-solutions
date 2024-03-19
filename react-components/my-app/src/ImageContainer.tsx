@@ -1,7 +1,3 @@
 export function ImageContainer() {
-  return (
-    <>
-      <img src="../public/image.png" />
-    </>
-  );
+  return <img src="/image.png" />;
 }
