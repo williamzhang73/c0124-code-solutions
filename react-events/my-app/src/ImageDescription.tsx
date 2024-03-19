@@ -1,12 +1,11 @@
 type Props = {
-  imageDescrip: string[];
-  index: number;
+  imageDescrip: string;
 };
 
-export function ImageDescription({ imageDescrip, index }: Props) {
+export function ImageDescription({ imageDescrip }: Props) {
   return (
     <div>
-      <p>{imageDescrip[index]}</p>
+      <p>{imageDescrip}</p>
     </div>
   );
 }

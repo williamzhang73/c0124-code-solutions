@@ -1,12 +1,11 @@
 type Props = {
-  imageCap: string[];
-  index: number;
+  imageCap: string;
 };
 
-export function ImageCaption({ imageCap, index }: Props) {
+export function ImageCaption({ imageCap }: Props) {
   return (
     <div>
-      <h3>{imageCap[index]}</h3>
+      <h3>{imageCap}</h3>
     </div>
   );
 }
