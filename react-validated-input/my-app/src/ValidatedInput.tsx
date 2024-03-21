@@ -3,24 +3,30 @@ import { FcCheckmark } from 'react-icons/fc';
 import { FaTimes } from 'react-icons/fa';
 
 export function ValidatedInput() {
-  const [char, setChar] = useState('');
+  const [chars, setChars] = useState('');
   const label = <label htmlFor="password">Password:</label>;
   const input = (
     <input type="text" id="password" onChange={handleCharChange}></input>
   );
-  /*   const passwordRegEx = /^(?=.*[a-zA-Z])(?=.*d)(?=.*[!#$%&?]).{8,}$/;
-  const formatResult = passwordRegEx.test(); */
+  const passwordRegEx = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()]).{8,}$/;
+
   let message = '';
   let passwordFormat = false;
-  if (char.length === 0) {
+  if (chars.length === 0) {
     message = 'A password is required.';
     passwordFormat = false;
-  } else if (char.length < 8) {
+  } else if (chars.length < 8) {
     message = 'Your password is too short.';
     passwordFormat = false;
   } else {
-    message = '';
-    passwordFormat = true;
+    const formatResult = passwordRegEx.test(chars);
+    if (formatResult) {
+      message = '';
+      passwordFormat = true;
+    } else {
+      message = 'password format wrong.';
+      passwordFormat = false;
+    }
   }
   const pMessage = (
     <p className="message" style={{ textAlign: 'left' }}>
@@ -29,8 +35,7 @@ export function ValidatedInput() {
   );
   function handleCharChange(event) {
     const passwordValue = event.target.value;
-    /*     console.log('passwordValue: ', passwordValue); */
-    setChar(passwordValue);
+    setChars(passwordValue);
   }
   const formatCheck = passwordFormat ? (
     <FcCheckmark />
