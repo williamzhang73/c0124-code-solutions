@@ -2,15 +2,16 @@ import { useState } from 'react';
 
 export function ToggleSwitch() {
   const [isOn, setIsOn] = useState(false);
-  let modifierClass = null;
+  let modifierClass = '';
   function handleToggle() {
-    if (isOn) {
+    /*    if (isOn) {
       setIsOn(false);
     } else {
       setIsOn(true);
-    }
+    } */
+    setIsOn(!isOn);
   }
-  if (!isOn) {
+  if (isOn) {
     modifierClass = 'is-on';
   }
   return (
@@ -18,7 +19,7 @@ export function ToggleSwitch() {
       <div className="slider" onClick={handleToggle}>
         <div className="switch"></div>
       </div>
-      <span className="state-label">{isOn ? 'OFF' : 'ON'}</span>
+      <span className="state-label">{isOn ? 'ON' : 'OFF'}</span>
     </div>
   );
 }
