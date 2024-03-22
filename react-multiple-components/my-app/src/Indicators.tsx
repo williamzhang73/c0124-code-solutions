@@ -1,9 +1,17 @@
 type Props = {
   items: string[];
+  index: number;
+  setIndex: (index: number) => void;
 };
-export function Indicators({ items }: Props) {
-  const mappedItem = items.map((item, index) => (
-    <button key={index}>{index}</button>
+export function Indicators({ items, index }: Props) {
+  const mappedItem = items.map((item, itemIndex) => (
+    <button
+      key={itemIndex}
+      style={{
+        backgroundColor: itemIndex === index ? 'lightblue' : undefined,
+      }}>
+      {itemIndex}
+    </button>
   ));
   return mappedItem;
 }

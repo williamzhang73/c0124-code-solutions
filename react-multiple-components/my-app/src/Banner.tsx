@@ -1,6 +1,6 @@
 type Props = {
-  items: string[];
+  item: string;
 };
-export function Banner({ items }: Props) {
-  return <div>{items[0]}</div>;
+export function Banner({ item }: Props) {
+  return <div>{item}</div>;
 }
