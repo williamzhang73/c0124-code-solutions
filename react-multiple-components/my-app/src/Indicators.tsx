@@ -3,12 +3,15 @@ type Props = {
   index: number;
   setIndex: (index: number) => void;
 };
-export function Indicators({ items, index }: Props) {
+export function Indicators({ items, index, setIndex }: Props) {
   const mappedItem = items.map((item, itemIndex) => (
     <button
       key={itemIndex}
       style={{
         backgroundColor: itemIndex === index ? 'lightblue' : undefined,
+      }}
+      onClick={() => {
+        setIndex(itemIndex);
       }}>
       {itemIndex}
     </button>

@@ -22,7 +22,12 @@ export function RotatingBanner({ items }: Props) {
         length={length}
       />
       <Indicators items={items} index={index} setIndex={setIndex} />
-      <NextButton next={next} index={index} setIndex={setIndex} />
+      <NextButton
+        next={next}
+        index={index}
+        setIndex={setIndex}
+        length={length}
+      />
     </>
   );
 }
