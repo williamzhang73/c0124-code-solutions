@@ -1,5 +1,6 @@
 type Props = {
-  prev: string;
+  prev?: string;
+  next?: string;
   index: number;
   setIndex: (index: number) => void;
   length: number;
