@@ -6,7 +6,7 @@ type Props = {
 };
 export function SearchableList({ quotes }: Props) {
   const [input, setInput] = useState('');
-  let mappedQuotes;
+  let mappedQuotes: JSX.Element[] = [];
   const message = 'No items match the filter.';
   if (input === '') {
     mappedQuotes = quotes.map((item, index) => (
