@@ -10,10 +10,7 @@ type Props = {
   topics: Topic[];
 };
 export function Accordion({ topics }: Props) {
-  const [activeId, setActiveId] = useState(1);
-  /*   function onTitleClick() {
-    setActiveId();
-  } */
+  const [activeId, setActiveId] = useState(0);
   return topics.map((topic) => (
     <TopicCard
       topic={topic}
