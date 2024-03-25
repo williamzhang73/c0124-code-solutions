@@ -11,11 +11,17 @@ type Props = {
 };
 export function Accordion({ topics }: Props) {
   const [activeId, setActiveId] = useState(0);
+  function onClick(id: number) {
+    setActiveId(id);
+    if (id === activeId) {
+      setActiveId(0);
+    }
+  }
   return topics.map((topic) => (
     <TopicCard
       topic={topic}
       key={String(topic.id)}
       activeId={activeId}
-      onTitleClick={setActiveId}></TopicCard>
+      onTitleClick={onClick}></TopicCard>
   ));
 }

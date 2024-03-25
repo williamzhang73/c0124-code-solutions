@@ -14,11 +14,7 @@ export function TopicCard({ topic, activeId, onTitleClick }: Props) {
       <div className="title" onClick={() => onTitleClick(topic.id)}>
         {topic.title}
       </div>
-      {activeId === topic.id ? (
-        <div className="content">{topic.content}</div>
-      ) : (
-        ''
-      )}
+      {activeId === topic.id && <div className="content">{topic.content}</div>}
     </>
   );
 }
