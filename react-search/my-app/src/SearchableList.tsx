@@ -7,6 +7,7 @@ type Props = {
 export function SearchableList({ quotes }: Props) {
   const [input, setInput] = useState('');
   let mappedQuotes;
+  const message = 'No items match the filter.';
   if (input === '') {
     mappedQuotes = quotes.map((item, index) => (
       <li key={index} style={{ textAlign: 'left' }}>
@@ -15,12 +16,13 @@ export function SearchableList({ quotes }: Props) {
     ));
   } else {
     const filtered = quotes.filter((list) => list.includes(input));
-    const filteredList = filtered.map((item, index) => (
-      <li key={index} style={{ textAlign: 'left' }}>
-        {item}
-      </li>
-    ));
-    mappedQuotes = filteredList;
+    if (filtered.length > 0) {
+      mappedQuotes = filtered.map((item, index) => (
+        <li key={index} style={{ textAlign: 'left' }}>
+          {item}
+        </li>
+      ));
+    }
   }
   function handleSearchChange(e: ChangeEvent<HTMLInputElement>) {
     const value = e.currentTarget.value;
@@ -29,7 +31,7 @@ export function SearchableList({ quotes }: Props) {
   return (
     <>
       <SearchBar handleSearchChange={handleSearchChange} input={input} />
-      <ListItems mappedQuotes={mappedQuotes} />
+      <ListItems mappedQuotes={mappedQuotes} message={message} />
     </>
   );
 }
