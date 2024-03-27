@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Image } from './Image';
-import { GrPrevious } from 'react-icons/gr';
-import { GrNext } from 'react-icons/gr';
+
 import { FaRegCircle } from 'react-icons/fa';
+import { PreviousIcon } from './PreviousIcon';
+import { NextIcon } from './NextIcon';
 type Image = {
   src: string;
   alt: string;
@@ -20,13 +21,18 @@ export function Carousel({ images }: Props) {
       clearInterval(intervalId);
     };
   }, [index]);
+
+  function handlePrevious() {
+    setIndex((index - 1 + images.length) % images.length);
+  }
+
+  function handleNext() {
+    setIndex((index + 1) % images.length);
+  }
+
   return (
     <div className="row">
-      <GrPrevious
-        className="column-third GrPrevious"
-        onClick={() => setIndex((index - 1 + images.length) % images.length)}
-      />
-
+      <PreviousIcon onClick={handlePrevious} />
       <div className="column-third">
         <Image src={images[index].src} alt={images[index].alt} />
         {images.map((image, currentIndex) => (
@@ -37,10 +43,7 @@ export function Carousel({ images }: Props) {
           />
         ))}
       </div>
-      <GrNext
-        className="column-third GrNext"
-        onClick={() => setIndex((index + 1) % images.length)}
-      />
+      <NextIcon onClick={handleNext} />
     </div>
   );
 }
