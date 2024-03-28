@@ -1,0 +1,9 @@
+img {
+  width: 100%;
+}
+
+.Single-column-third {
+  width: calc(95% / 3);
+  border: 1px solid black;
+  margin: 2px;
+}
