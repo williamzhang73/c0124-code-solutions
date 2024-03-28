@@ -23,7 +23,7 @@
 }
 
 .open-outlet {
-  width: calc(100% / 6 * 5);
+  flex-grow: 1;
 }
 
 .business-title {

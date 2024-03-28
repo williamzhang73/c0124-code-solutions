@@ -16,7 +16,7 @@ export function App() {
     <Routes>
       <Route path="/" element={<AppDrawer menuItems={menuItems} />}>
         <Route index element={<Catalog />} />
-        <Route path="details/:productId" element={<ProductDetails />} />
+        <Route path="details" element={<ProductDetails />} />
         <Route path="about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Route>

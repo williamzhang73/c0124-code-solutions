@@ -1,38 +1,18 @@
-import { useEffect, useState } from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import { readProduct, type Product, toDollars } from '../lib';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toDollars } from '../lib';
 import './ProductDetails.css';
 
 export function ProductDetails() {
-  const { productId } = useParams();
   const navigate = useNavigate();
-  const [product, setProduct] = useState<Product>();
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<unknown>();
 
-  useEffect(() => {
-    async function loadProduct(productId: number) {
-      try {
-        const product = await readProduct(productId);
-        setProduct(product);
-      } catch (err) {
-        setError(err);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    if (productId) {
-      setIsLoading(true);
-      loadProduct(+productId);
-    }
-  }, [productId]);
-
+  const location = useLocation();
+  const product = location.state;
   function handleAddToCart() {
     alert(`Added ${product?.name} to cart`);
     navigate('/');
   }
 
-  if (isLoading) return <div>Loading...</div>;
+  /*   if (isLoading) return <div>Loading...</div>;
   if (error) {
     return (
       <div>
@@ -40,7 +20,7 @@ export function ProductDetails() {
         {error instanceof Error ? error.message : 'Unknown Error'}
       </div>
     );
-  }
+  } */
   if (!product) return null;
   const { name, imageUrl, price, shortDescription, longDescription } = product;
   return (

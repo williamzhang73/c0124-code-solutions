@@ -11,8 +11,6 @@ type Props = {
   menuItems: MenuItem[];
 };
 export function AppDrawer({ menuItems }: Props) {
-  const about = menuItems[0];
-  const catalog = menuItems[1];
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
@@ -24,28 +22,22 @@ export function AppDrawer({ menuItems }: Props) {
           }}
         />
         {isOpen && <div className="business-title">Hylian Shopping</div>}
-        <div>
-          <Link to={about.path}>
-            <img
-              src={`${about.iconUrl}`}
-              alt="about svg"
-              className="about-image"
-            />
-            {isOpen && 'About'}
-          </Link>{' '}
-        </div>{' '}
-        <div>
-          <Link to={catalog.path}>
-            <img
-              src={`${catalog.iconUrl}`}
-              alt="catalog image"
-              className="catalog-image"
-            />
-            {isOpen && 'Catalog'}
-          </Link>
-        </div>
+        <ul>
+          {menuItems.map((item, index) => (
+            <li key={index}>
+              <Link to={item.path}>
+                <img
+                  src={`${item.iconUrl}`}
+                  alt="image"
+                  className="about-image"
+                />
+                {isOpen && item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
-      <div className={isOpen ? 'open-outlet' : 'close-outlet'}>
+      <div className="open-outlet">
         <Outlet />
       </div>
     </>
