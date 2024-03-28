@@ -1,0 +1,10 @@
+.catalog-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-title {
+  font-size: larger;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,12 @@
+.header {
+  background-color: cadetblue;
+  height: 76px;
+  width: 100%;
+  display: flex;
+  row-gap: 10px;
+}
+
+.header-about {
+  margin-right: 20px;
+  margin-left: 20px;
+}
