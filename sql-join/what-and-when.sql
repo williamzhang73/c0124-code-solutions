@@ -1,3 +1,5 @@
-select "films"."releaseYear", "genres"."name" from "films" join "filmGenre"
-on "films"."filmId"="filmGenre"."filmId" join "genres" on "genres"."genreId"="filmGenre"."genreId" 
-where "films"."title"='Boogie Amelie';
+select "f"."releaseYear", "g"."name" 
+from "films" as "f"
+join "filmGenre" as "fg" using ("filmId") 
+join "genres" as "g" using ("genreId") 
+where "f"."title"='Boogie Amelie';

@@ -1,2 +1,5 @@
-select "payments"."amount","customers"."firstName", "customers"."lastName" from "customers"
-join "payments" using ("customerId") order by "payments"."amount" desc limit 10;
+select "c"."firstName", "c"."lastName",  "p"."amount" as "payment"
+from "customers" as "c"
+join "payments" as "p" using ("customerId")
+order by "payment" desc 
+limit 10;

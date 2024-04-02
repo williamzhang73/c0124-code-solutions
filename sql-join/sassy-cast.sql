@@ -1,3 +1,6 @@
-select "actors"."firstName", "actors"."lastName" from "actors" join "castMembers"
-on "actors"."actorId"="castMembers"."actorId" join "films" on "films"."filmId"="castMembers"."filmId" 
-where "films"."title"='Jersey Sassy';
+select "a"."firstName", "a"."lastName" 
+from "actors" as "a"
+join "castMembers" as "c"
+using ("actorId") 
+join "films" as "f" using ("filmId") 
+where "f"."title"='Jersey Sassy';
