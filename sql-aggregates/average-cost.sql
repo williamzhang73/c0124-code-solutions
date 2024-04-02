@@ -1,1 +1,1 @@
- select avg("replacementCost") as "averageCost" from "films";
+ select avg("replacementCost") as "avgReplacementCost" from "films";
