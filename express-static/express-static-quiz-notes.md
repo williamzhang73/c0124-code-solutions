@@ -5,12 +5,13 @@
 Answer the following questions in the provided markdown file before turning in this exercise:
 
 - What is the purpose of the Express Static middleware?
-
+  server the static fills to the client
 - What does `express.static()` return?
-
+  return an object representing a middleware
 - What are several examples of static files?
-
+  javascript files, html, images. videos
 - What is a good way to serve application images using Express?
+  put images in the public folder
 
 ## Notes
 
