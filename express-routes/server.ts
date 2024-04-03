@@ -16,7 +16,9 @@ app.get('/notes', (req, res) => {
 app.post('/notes/123', (req, res) => {
   res.send(`path: ${req.path}, 200 OK`);
 });
-
+app.get('*', (req, res) => {
+  res.send(`match all request`);
+});
 app.listen(8080, () => {
   console.log('Express server listening on port 8080');
 });
