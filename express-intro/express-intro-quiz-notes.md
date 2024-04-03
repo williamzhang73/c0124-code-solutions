@@ -9,7 +9,7 @@ Answer the following questions in the provided markdown file before turning in t
 - How does Express fit into a full-stack web application?
   Express is a simplified web framework to build backend application
 - How do you add `express` to your package dependencies?
-  npm install express
+  npm install express --save-dev @types/node @types/express
 - What Express application method starts the server and binds it to a network `port`?
   app.listen()
 - What is a network `port`?
