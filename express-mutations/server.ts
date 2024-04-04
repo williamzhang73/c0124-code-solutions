@@ -45,7 +45,7 @@ app.post('/api/actors', async (req, res, next) => {
     values($1, $2) returning *; `;
     const result = await db.query(sql, params);
     const [rows] = result.rows;
-    res.send(201).json(rows);
+    res.status(201).json(rows);
   } catch (error) {
     next(error);
   }
