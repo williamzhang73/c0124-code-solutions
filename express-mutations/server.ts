@@ -59,8 +59,9 @@ app.put('/api/actors/:actorId', async (req, res, next) => {
       throw new ClientError(400, 'firstName is required');
     if (lastName === undefined)
       throw new ClientError(400, 'lastName is required');
-    if (actorId === undefined)
+    if (!Number.isInteger(+actorId)) {
       throw new ClientError(400, 'actorId is required');
+    }
     const params = [firstName as string, lastName as string, actorId];
     const sql = `update "actors" 
        set "firstName"=$1, "lastName"=$2 
@@ -78,16 +79,16 @@ app.put('/api/actors/:actorId', async (req, res, next) => {
 app.delete('/api/actors/:actorId', async (req, res, next) => {
   try {
     const { actorId } = req.params;
-    console.log('actorID: ', actorId);
-    if (actorId === undefined)
-      throw new ClientError(400, 'actorId is required');
+    if (!Number.isInteger(+actorId)) {
+      throw new ClientError(400, 'actorId must be an integer');
+    }
     const sql = `delete from "actors" 
     where "actorId"=$1 
     returning *`;
     const result = await db.query(sql, [actorId]);
     const [deleted] = result.rows;
     if (!deleted) throw new ClientError(404, 'actorId not exist.');
-    res.status(204).json(deleted);
+    res.status(204).json();
   } catch (error) {
     next(error);
   }
