@@ -24,7 +24,7 @@ function validateGradeId(gradeId: string): void {
 function validateGrade({ name, course, score }: Grade): void {
   if (!name) throw new ClientError(400, 'name is required');
   if (!course) throw new ClientError(400, 'course is required');
-  if (!score || !(score >= 0 && score <= 100) || !Number.isInteger(+score))
+  if (!score || !Number.isInteger(+score) || !(score >= 0 && score <= 100))
     throw new ClientError(400, 'score needs to be fixed');
 }
 
