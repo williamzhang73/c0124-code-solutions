@@ -1,12 +1,14 @@
 import express from 'express';
 import pg from 'pg';
+import 'dotenv/config';
 import { errorMiddleware } from './lib/index.js';
 const db = new pg.Pool({
-  connectionString: 'postgress://dev:dev@localhost/catalogs',
+  connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false,
   },
 });
+console.log('process.env: ', process.env);
 const app = express();
 app.get('/api/catalogs', async (req, res, next) => {
   try {
@@ -21,6 +23,6 @@ app.get('/api/catalogs', async (req, res, next) => {
 
 app.use(errorMiddleware);
 
-app.listen(8080, () => {
-  console.log('listening on port 8080');
+app.listen(process.env.PORT, () => {
+  console.log(`listening on port ${process.env.PORT}`);
 });
