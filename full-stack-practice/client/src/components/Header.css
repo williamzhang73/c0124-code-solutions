@@ -1,0 +1,14 @@
+.header {
+  height: 100px;
+  background-color: cadetblue;
+  padding: 2%;
+}
+
+.about {
+  color: white;
+  margin-right: 41px;
+}
+
+.catalog {
+  color: white;
+}
