@@ -9,13 +9,8 @@ export function evenNumbers(numbers: number[]): number[] {
  * Returns a number formatted in dollars and cents.
  */
 export function toDollars(amount: number): string {
-  if (!Number.isInteger(amount)) {
-    return 'undefined';
-  }
-  if (amount < 0) {
-    return 'bigger than 0';
-  }
-  return `$${amount}.00`;
+  const fixedAmount = amount.toFixed(2);
+  return `$${fixedAmount}`;
 }
 
 /**

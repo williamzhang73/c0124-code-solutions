@@ -15,13 +15,9 @@ describe('evenNumbers', () => {
 });
 
 describe('toDollars', () => {
-  it('dollar value should be positive', () => {
-    const result = toDollars(-5);
-    expect(result).toEqual('bigger than 0');
-  });
-  it('dollar value should be integer', () => {
+  it('return amount with 2 decimal value', () => {
     const result = toDollars(20.5);
-    expect(result).toEqual('undefined');
+    expect(result).toEqual('$20.50');
   });
 });
 
