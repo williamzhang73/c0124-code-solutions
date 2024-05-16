@@ -1,0 +1,106 @@
+/* .tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.parent {
+  background-color: aquamarine;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.child {
+  background-color: blue;
+  width: 25px;
+  height: 25px;
+  position: absolute; 
+  bottom: 0;}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navigate_bar {
+  width: 90%;
+  position: fixed;
+  background-color: aquamarine;
+}
+
+.content_1 {
+  width: 70%;
+  padding-right: 4%;
+}
+
+.content_2 {
+  width: 70%;
+  padding-right: 4%;
+  visibility: hidden;
+}
+
+.content_3 {
+  width: 70%;
+  padding-right: 4%;
+  visibility: hidden;
+}
+
+.content_4 {
+  width: 70%;
+  padding-right: 4%;
+  visibility: hidden;
+}
+
+.side_bar {
+  width: 30%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+ul li:hover {
+  background-color: cadetblue;
+  color: white;
+}
+
+/* div.navigate_bar + h1 {
+  width: 100%;
+  margin-top: 100px;
+}
+ */
